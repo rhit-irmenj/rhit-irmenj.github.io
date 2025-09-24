@@ -21,17 +21,24 @@ h1 {
     width: 300px;
     height: 400px;
 }
-.navBut{
-    background-color: black;
-    color: white;
-    text-align: center; 
-}
 .nav{
-    display:block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+   background-color: black;
+   color:blanchedalmond;
+   overflow: hidden; 
+}
+.nav a {
+    float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav a:hover{
+    background-color: gray;
+    color: #800000;
+
+}
+.nav a:active {
+    color:aquamarine
 }
