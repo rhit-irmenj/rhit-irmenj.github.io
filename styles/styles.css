@@ -51,3 +51,8 @@ h1 {
     display: inline;
     padding: 20px;
 }
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
