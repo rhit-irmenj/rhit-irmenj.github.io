@@ -26,7 +26,7 @@ h1 {
    background-color: black;
    color:blanchedalmond;
    overflow: hidden;
-   display: inline-block; 
+    
 }
 .nav a {
     float: left;
