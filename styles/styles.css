@@ -1,6 +1,7 @@
 h1 { 
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
+    
 }
 .profPhoto{
     width: 500px;
@@ -24,7 +25,8 @@ h1 {
 .nav{
    background-color: black;
    color:blanchedalmond;
-   overflow: hidden; 
+   overflow: hidden;
+   display: inline-block; 
 }
 .nav a {
     float: left;
@@ -41,4 +43,11 @@ h1 {
 }
 .nav a:active {
     color:aquamarine
+}
+.resLink {
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+    display: inline;
+    padding: 20px;
 }
