@@ -9,7 +9,11 @@
 	
 <body>
 	
-	<button class="navBut">Navigation</button>
+	<button id="changePage" class="navBut">Navigation</button>
+	<script> document.getElementById("changePage").onclick = function(){
+		window.location.href = "/index.html"
+	}
+		</script>
 	<nav>
 		<ul>
 			<li><a href="/index.html">Main Page</a></li>
