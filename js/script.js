@@ -8,4 +8,9 @@
         button.innerHTML=courseId[i++].innerHTML;
         i=courseId.length === 1? 0:1;
     }
+
+    function navBar(){
+        let nav = document.getElementById("nav-placeholder");
+        nav.onload("nav.html");
+    }
   
