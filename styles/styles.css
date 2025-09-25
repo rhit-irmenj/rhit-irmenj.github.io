@@ -114,18 +114,21 @@ nav li{
         place-items: center;
         translate:0%200%;
         transition:  translate 3s ease   ;
-        -webkit-transition:  translate 3s ease   ;
-        -moz-transition:  translate 3s ease   ;
-        -ms-transition:  translate 3s ease   ;
-        -o-transition:  translate 3s ease   ;
+       
 }
-    &:hover{
+    span {
+        display: block;
+        transition: translate .3s ease;
+    }
+&:hover{
+    span{
           translate:0% -200%;
     }
+
     &::before{
         translate: 0% 0%;
     }
-
+}
 }
 
 .courseButton{
