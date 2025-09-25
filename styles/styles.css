@@ -4,8 +4,10 @@ h1 {
     
 }
 .profPhoto{
-    width: 500px;
-    height: 600px;
+     width: 400px;
+    height: 594px;
+    float:left;
+
 }
 .grid-container {
     display: grid;
