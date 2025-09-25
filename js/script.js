@@ -18,6 +18,14 @@
 
     function navBar(){
         let nav = document.getElementById("nav-placeholder");
+        document.addEventListener("DOMContentLoaded", function(){
+            fetch("nav.html")
+            .then(response=> response.text)
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            })
+            .catch( error => console.log("Error"))
+        });
         nav.onload("nav.html");
     }
      function footer(){
