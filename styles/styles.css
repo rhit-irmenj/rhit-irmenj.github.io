@@ -53,12 +53,12 @@ h1 {
     display: inline;
     padding: 20px;
 }
-nav ul {
+.nav ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
-nav li{
+.nav li{
     display: inline-block;
 }
 .flip-card {
@@ -139,7 +139,4 @@ nav li{
      display: inline-block;
      font-size: 20px;
      margin: 5px, 5px;
-}
-.links{
-    text-decoration: underline;
 }
