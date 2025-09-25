@@ -21,8 +21,8 @@ h1 {
     text-align: left;
 }
 .projectPic{
-    width: 400px;
-    height: 594px;
+    width: 300px;
+    height: 200px;
 }
 .nav{
    background-color: black;
@@ -97,4 +97,13 @@ nav li{
     height: 100%;
     -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
+}
+.button {
+    background-color: #ffabaf;
+     border: 3px solid #800000;
+     color: black;
+     text-align: center;
+     display: inline-block;
+     font-size: 20px;
+     margin: 5px, 5px;
 }
