@@ -127,3 +127,13 @@ nav li{
     }
 
 }
+
+.courseButton{
+    background-color: #ffabaf;
+     border: 3px solid #800000;
+     color: black;
+     text-align: center;
+     display: inline-block;
+     font-size: 20px;
+     margin: 5px, 5px;
+}
