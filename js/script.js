@@ -17,27 +17,27 @@
 
 
     function navBar(){
-        document.getElementById("nav-placeholder");
-        document.addEventListener("DOMContentLoaded", function(){
+              
             fetch("nav.html")
-            .then(response=> response.text)
+            .then(response=> response.text())
             .then(data => {
                 document.getElementById("nav-placeholder").innerHTML = data;
             })
             .catch( error => console.log("Error: ", error))
-        });
+        };
        
-    }
      function footer(){
-        document.getElementById("footer-placeholder");
-        document.addEventListener("DOMContentLoaded", function(){
+        
             fetch("nav.html")
-            .then(response => response.text)
+            .then(response => response.text())
             .then(data => {
                 document.getElementById("footer-placeholder").innerHTML = data;
 
             })
             .catch(error => console.log("Error: ", error))
-        });
-    }
+        };
+    document.addEventListener("DOMContentLoaded", function(){
+        navBar();
+        footer();
+    });
   
