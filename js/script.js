@@ -24,12 +24,20 @@
             .then(data => {
                 document.getElementById("nav-placeholder").innerHTML = data;
             })
-            .catch( error => console.log("Error"))
+            .catch( error => console.log("Error: ", error))
         });
-        nav.onload("nav.html");
+       
     }
      function footer(){
         let foot = document.getElementById("footer-placeholder");
-        nav.onload("footer.html");
+        document.addEventListener("DOMContentLoaded", function(){
+            fetch("nav.html")
+            .then(response => response.text)
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+
+            })
+            .catch(error => console.log("Error: ", error))
+        });
     }
   
