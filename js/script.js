@@ -13,4 +13,8 @@
         let nav = document.getElementById("nav-placeholder");
         nav.onload("nav.html");
     }
+     function footer(){
+        let foot = document.getElementById("footer-placeholder");
+        nav.onload("footer.html");
+    }
   
