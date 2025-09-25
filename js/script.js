@@ -1,6 +1,4 @@
 
-  
-  setInterval(changeButtonText, 2000);
     function changeButtonText(){
         let button1 = document.getElementById("courseButton");
         let button2 = document.getElementById("not_completed")
@@ -14,7 +12,7 @@
         j=completedIdId.length === 1? 0:1;
 
     }
-
+    
 
     function navBar(){
               
@@ -40,5 +38,6 @@
     document.addEventListener("DOMContentLoaded", function(){
         navBar();
         footer();
+        changeButtonText();
     });
   
