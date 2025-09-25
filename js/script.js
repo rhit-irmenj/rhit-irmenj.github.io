@@ -17,7 +17,7 @@
 
 
     function navBar(){
-        let nav = document.getElementById("nav-placeholder");
+        document.getElementById("nav-placeholder");
         document.addEventListener("DOMContentLoaded", function(){
             fetch("nav.html")
             .then(response=> response.text)
@@ -29,7 +29,7 @@
        
     }
      function footer(){
-        let foot = document.getElementById("footer-placeholder");
+        document.getElementById("footer-placeholder");
         document.addEventListener("DOMContentLoaded", function(){
             fetch("nav.html")
             .then(response => response.text)
