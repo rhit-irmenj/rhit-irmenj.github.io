@@ -22,7 +22,7 @@ h1 {
 }
 .projectPic{
     width: 300px;
-    height: 200px;
+    height: 300px;
 }
 .nav{
    background-color: black;
@@ -106,4 +106,24 @@ nav li{
      display: inline-block;
      font-size: 20px;
      margin: 5px, 5px;
+     position: relative;
+     overflow: clip;
+     &::before {
+        position: absolute;
+        inset: 0;
+        place-items: center;
+        translate:0%200%;
+        transition:  translate 3s ease   ;
+        -webkit-transition:  translate 3s ease   ;
+        -moz-transition:  translate 3s ease   ;
+        -ms-transition:  translate 3s ease   ;
+        -o-transition:  translate 3s ease   ;
+}
+    &:hover{
+          translate:0% -200%;
+    }
+    &::before{
+        translate: 0% 0%;
+    }
+
 }
