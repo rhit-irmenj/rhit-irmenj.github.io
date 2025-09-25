@@ -151,3 +151,20 @@ h1 {
 h2 {
     background-color: #ffabaf;
 }
+.jobs{
+    display: flex;
+}
+.jobs ul, li {
+    margin: 0;
+    list-style: none;
+    column-width: 200px;
+    column-count: 2;
+   border-spacing:50px 0 ;
+   border-collapse: seperate;
+}
+
+#second ul,
+li{
+    column-width: 200px;
+    column-count: 1;
+}
