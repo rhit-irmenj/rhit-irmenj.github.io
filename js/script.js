@@ -3,7 +3,7 @@
         let button1 = document.getElementById("courseButton");
         let button2 = document.getElementById("not_completed")
         completedId = ["completed1","completed2","completed3","completed4","completed5"];
-        notCompletedID = ["not_completed1","not_completed2","not_completed3","not_completed4","not_completed5"];
+        notCompletedID = ["not_complete1","not_complete2","not_complete3","not_complete4","not_complete5"];
         i=0;
       
         let text1= document.getElementById(completedId[i]).innerHTML;
@@ -42,6 +42,6 @@
     document.addEventListener("DOMContentLoaded", function(){
         navBar();
         footer();
-        setInterval(changeButtonText(),2000);
+        setInterval(changeButtonText,2000);
     });
   
