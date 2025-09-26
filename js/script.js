@@ -5,12 +5,16 @@
         completedId = ["completed1","completed2","completed3","completed4","completed5"];
         notCompletedID = ["not_completed1","not_completed2","not_completed3","not_completed4","not_completed5"];
         i=0;
-        j=0;
-        button1.innerHTML=completedId[i++].innerHTML;
-        button2.innerHTML=notCompletedID[j++].innerHTML;
-        i=completedIdId.length === 1? 0:1;
-        j=completedIdId.length === 1? 0:1;
-
+      
+        let text1= document.getElementById(completedId[i]).innerHTML;
+        let text2 = document.getElementById(notCompletedID[i]).innerHTML;
+        i++;
+        button1.innerHTML = text1;
+        button2.innerHTML = text2;
+        if( i >= completedId.length ){
+            i = 0;
+        }
+       
     }
     
 
@@ -38,6 +42,6 @@
     document.addEventListener("DOMContentLoaded", function(){
         navBar();
         footer();
-        changeButtonText();
+        setInterval(changeButtonText(),2000);
     });
   
