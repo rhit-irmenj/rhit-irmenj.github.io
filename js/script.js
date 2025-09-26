@@ -16,14 +16,7 @@
         }
 
     }
-    let scrollButton = document.getElementById("toTop");
-    scrollButton.addEventListener("click", () => {
-        window.scrollTo({
-            top:0,
-            behavior:"smooth"
-
-        })
-    });
+    
    
     function navBar(){
               
@@ -51,5 +44,13 @@
         footer();
         changeButtonText();
         setInterval(changeButtonText,2000);
+         let scrollButton = document.getElementById("toTop");
+        scrollButton.addEventListener("click", () => {
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+
+        })
+    });
     });
   
