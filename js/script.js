@@ -50,6 +50,6 @@
     document.addEventListener("DOMContentLoaded", function(){
         navBar();
         footer();
-        setInterval(changeButtonText,2000);
+        setInterval(changeButtonText(),2000);
     });
   
