@@ -71,6 +71,7 @@
                 }
                 let button = document.createElement("button");
                 button.textContent = "Click me to return to the top!";
+                button.id = "button1";
                 footer.append(button);
 
                 // let a1 = document.createElement("a");
@@ -92,23 +93,28 @@
     
         
         function setupListeners(){
-                  let scrollButton = document.getElementById("toTop");
-        scrollButton.addEventListener("click", () => {
-            console.log("click");
-        window.scrollTo({
-            top:0,
-            behavior:"smooth"
-    });
-}
-)
-        };
+            document.querySelector("#button1").addEventListener("click", () =>{
+                window.scrollTo({
+                    top:0,
+                    behavior:"smooth"});
+                })
+        }
+            // let scrollButton = document.getElementById("toTop");
+            // scrollButton.addEventListener("click", () => {
+            // console.log("click");
+            // window.scrollTo({
+            // top:0,
+            // behavior:"smooth"});
+            //         })
+                      
 
         window.addEventListener("load", (event) => {
           navBar1();
             footer1();
-            //setupListeners();
+            setupListeners();
             //setInterval(changeButtonText(),2000);  
         })
+    
     
 
 
