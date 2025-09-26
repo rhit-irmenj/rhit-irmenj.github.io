@@ -141,15 +141,16 @@ h1 {
      font-size: 20px;
      margin: 5px, 5px;
 }
-.footer{
+#footer-placeholder{
     position: relative;
     width:100%;
     height: 50px;
     background-color: black;
     clear: both;
-     color: white;
+    color: white;
     margin-right: 25px;
 }
+
 h2 {
     background-color: gray;
 }

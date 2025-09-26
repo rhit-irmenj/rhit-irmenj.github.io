@@ -29,16 +29,18 @@
             .catch( error => console.log("Error: ", error))
         };
 
-        let navHeaders = {"index": "./index.html", "resume":"./resume.hmtl","portfolio": "./portfolio.html"};
+        let navHeaders = {"Main Page": "./index.html", "Resume":"./resume.html","Portfolio": "./portfolio.html"};
         
         function navBar1(){
-
-            for(value in navHeaders.values()){
-             let list1 = document.querySelector("#nav");
-             let li = document.createElement("li");
-            li.href = value;
-            li.title=navHeaders.keys(value);
-            list1.append(li);
+            let list1 = document.getElementById("nav-placeholder");
+            for(const[name,url] of Object.entries(navHeaders)){
+             
+            let p = document.createElement("p");
+            let a = document.createElement("a");
+            a.href = url;
+            a.innerHTML = name;
+            p.append(a);
+            list1.append(p);
             }
 }
 
@@ -54,21 +56,33 @@
             .catch(error => console.log("Error: ", error))
         };
 
-        let links={"handshake" :"https://rose-hulman.joinhandshake.com/profiles/5n9pf8", "linkedin": "https://www.linkedin.com/in/julia-irmen/"};
+        let links={"Handshake Profile" :"https://rose-hulman.joinhandshake.com/profiles/5n9pf8", "Linkedin Profile": "https://www.linkedin.com/in/julia-irmen/"};
         function footer1(){
                 let footer =document.getElementById("footer-placeholder");
+                // let p = document.createElement("p");
+                for(const[name, url] of Objects.entries(links)){
                 let p = document.createElement("p");
-                let a1 = document.createAttribute("a");
-                a1.href=links["handshake"]
-                a1.title ="Handshake Profile"
-                a1.textContent = "Handshake Profile"
-                p.appendChild(a1);
+                   let a1 = document.createElement("a");
+                    a1.href= url;
+                    a1.title = "Julia Irmen's "+ name;
+                    a1.innerHTML = name
+                    p.appendChild(a1);
+                    footer.appendChild(p);
+                }
+                // let a1 = document.createElement("a");
+                // a1.href=links["handshake"]
+                // a1.title ="Handshake Profile"
+                // a1.innerHTML = "Handshake Profile"
+                // p.appendChild(a1);
+                // footer.appendChild(p);
 
-                let a2 =document.createAttribute("a");
-                a2.href=links["linkedin"]
-                a2.title ="Linked Profile"
-                a2.textContent = "Linked Profile"
-                p.appendChild(a2);
+                // let a2 =document.createElement("a");
+                // a2.href=links["linkedin"]
+                // a2.title ="Linked Profile"
+                // a2.innerHTML = "Linked Profile"
+                // p.appendChild(a2);
+                // footer.appendChild(p);
+        
             };
 
     
@@ -88,8 +102,8 @@
         window.addEventListener("load", (event) => {
           navBar1();
             footer1();
-            setupListeners();
-            setInterval(changeButtonText(),2000);  
+            //setupListeners();
+            //setInterval(changeButtonText(),2000);  
         })
     
 
