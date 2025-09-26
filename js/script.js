@@ -56,12 +56,12 @@
             .catch(error => console.log("Error: ", error))
         };
 
-        let links={"Handshake Profile" :"https://rose-hulman.joinhandshake.com/profiles/5n9pf8", "Linkedin Profile": "https://www.linkedin.com/in/julia-irmen/"};
+        let links = {"Handshake Profile" :"https://rose-hulman.joinhandshake.com/profiles/5n9pf8", "Linkedin Profile": "https://www.linkedin.com/in/julia-irmen/"};
         function footer1(){
                 let footer =document.getElementById("footer-placeholder");
-                // let p = document.createElement("p");
-                for(const[name, url] of Objects.entries(links)){
-                let p = document.createElement("p");
+                
+                for(const[name, url] of Object.entries(links)){
+                    let p = document.createElement("p");
                    let a1 = document.createElement("a");
                     a1.href= url;
                     a1.title = "Julia Irmen's "+ name;
@@ -69,6 +69,10 @@
                     p.appendChild(a1);
                     footer.appendChild(p);
                 }
+                let button = document.createElement("button");
+                button.textContent = "Click me to return to the top!";
+                footer.append(button);
+
                 // let a1 = document.createElement("a");
                 // a1.href=links["handshake"]
                 // a1.title ="Handshake Profile"
