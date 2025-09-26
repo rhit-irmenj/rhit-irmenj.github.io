@@ -56,19 +56,19 @@
 
         let links={"handshake" :"https://rose-hulman.joinhandshake.com/profiles/5n9pf8", "linkedin": "https://www.linkedin.com/in/julia-irmen/"};
         function footer1(){
-         
+                let footer =document.getElementById("footer-placeholder");
                 let p = document.createElement("p");
                 let a1 = document.createAttribute("a");
-                a1.href=links[handshake]
+                a1.href=links["handshake"]
                 a1.title ="Handshake Profile"
                 a1.textContent = "Handshake Profile"
-                p.appendChild(a);
+                p.appendChild(a1);
 
                 let a2 =document.createAttribute("a");
-                a1.href=links[linkedin]
-                a1.title ="Linked Profile"
-                a1.textContent = "Linked Profile"
-                p.appendChild(a);
+                a2.href=links["linkedin"]
+                a2.title ="Linked Profile"
+                a2.textContent = "Linked Profile"
+                p.appendChild(a2);
             };
 
     
