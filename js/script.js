@@ -28,6 +28,20 @@
             })
             .catch( error => console.log("Error: ", error))
         };
+
+        let navHeaders = {"index": "./index.html", "resume":"./resume.hmtl","portfolio": "./portfolio.html"};
+        
+        function navBar1(){
+
+            for(value in navHeaders.values()){
+             let list1 = document.querySelector("#nav");
+             let li = document.createElement("li");
+            li.href = value;
+            li.title=navHeaders.keys(value);
+            list1.append(li);
+            }
+}
+
        
      function footer(){
         
@@ -40,15 +54,21 @@
             .catch(error => console.log("Error: ", error))
         };
 
-        let links={0:"https://rose-hulman.joinhandshake.com/profiles/5n9pf8", 1:"https://www.linkedin.com/in/julia-irmen/"};
+        let links={"handshake" :"https://rose-hulman.joinhandshake.com/profiles/5n9pf8", "linkedin": "https://www.linkedin.com/in/julia-irmen/"};
         function footer1(){
-            let p = document.createElement("p");
-            for(j=0;j<links.length;j++){
-                a = document.createAttribute("a")
-                a.innerHTML=links.j
+         
+                let p = document.createElement("p");
+                let a1 = document.createAttribute("a");
+                a1.href=links[handshake]
+                a1.title ="Handshake Profile"
+                a1.textContent = "Handshake Profile"
                 p.appendChild(a);
-            }
-                
+
+                let a2 =document.createAttribute("a");
+                a1.href=links[linkedin]
+                a1.title ="Linked Profile"
+                a1.textContent = "Linked Profile"
+                p.appendChild(a);
             };
 
     
@@ -66,7 +86,7 @@
         };
 
         window.addEventListener("load", (event) => {
-          navBar();
+          navBar1();
             footer1();
             setupListeners();
             setInterval(changeButtonText(),2000);  

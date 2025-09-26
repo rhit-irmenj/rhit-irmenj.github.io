@@ -147,6 +147,8 @@ h1 {
     height: 50px;
     background-color: black;
     clear: both;
+     color: white;
+    margin-right: 25px;
 }
 h2 {
     background-color: gray;
@@ -167,10 +169,6 @@ h2 {
 li{
     column-width: 200px;
     column-count: 1;
-}
-.linkWhite{
-    color: white;
-    margin-right: 25px;
 }
 
 li::marker{
