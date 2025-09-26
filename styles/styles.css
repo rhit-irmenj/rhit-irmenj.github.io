@@ -168,7 +168,7 @@ li{
     column-width: 200px;
     column-count: 1;
 }
-#handshake, #linkedin a{
+#handshake, #linkedin {
     color: white;
     margin-right: 25px;
 }
