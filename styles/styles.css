@@ -156,8 +156,8 @@ h2 {
 .jobs ul, li {
     margin: 0;
     list-style: none;
-    column-width: 200px;
-    column-count: 2;
+    column-width: 100px;
+    column-count: 1;
    border-spacing:50px 0 ;
    border-collapse: seperate;
 }
@@ -170,4 +170,8 @@ li{
 a #handshake, #linkedin{
     color: white;
     margin-right: 25px;
+}
+li::marker{
+    content:"★";
+    font-size: 1.2em;
 }
