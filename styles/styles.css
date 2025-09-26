@@ -176,3 +176,7 @@ li::marker{
     content:"★";
     font-size: 1.2em;
 }
+.jobName{
+    text-decoration: underline;
+    background-color: #9e3135;
+}
