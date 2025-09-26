@@ -40,6 +40,18 @@
             .catch(error => console.log("Error: ", error))
         };
 
+        let links={0:"https://rose-hulman.joinhandshake.com/profiles/5n9pf8", 1:"https://www.linkedin.com/in/julia-irmen/"};
+        function footer1(){
+            let p = document.createElement("p");
+            for(j=0;j<links.length;j++){
+                a = document.createAttribute("a")
+                a.innerHTML=links.j
+                p.appendChild(a);
+            }
+                
+            };
+
+    
         
         function setupListeners(){
                   let scrollButton = document.getElementById("toTop");
@@ -55,7 +67,7 @@
 
         window.addEventListener("load", (event) => {
           navBar();
-            footer();
+            footer1();
             setupListeners();
             setInterval(changeButtonText(),2000);  
         })
