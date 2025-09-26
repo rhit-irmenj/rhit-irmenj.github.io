@@ -1,8 +1,9 @@
 
    let i=0;
+    let button1 = document.getElementById("courseButton1");
+    let button2 = document.getElementById("courseButton2");
    function changeButtonText(){
-        let button1 = document.getElementById("courseButton1");
-        let button2 = document.getElementById("courseButton2");
+
         completedId = ["completed1","completed2","completed3","completed4","completed5"];
         notCompletedID = ["not_complete1","not_complete2","not_complete3","not_complete4","not_complete5"];
 
@@ -14,10 +15,17 @@
         if( i >= completedId.length ){
             i = 0;
         }
-       
-    }
-    
 
+    }
+    let scrollButton = document.getElementById("toTop");
+    scrollButton.addEventListener("click", () => {
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+
+        })
+    });
+   
     function navBar(){
               
             fetch("nav.html")
