@@ -40,17 +40,11 @@
             .catch(error => console.log("Error: ", error))
         };
 
-        window.addEventListener("load", (event) => {
-          navBar();
-            footer();
-            setupListeners();
-            setInterval(changeButtonText,2000);  
-        })
-    
-
+        
         function setupListeners(){
                   let scrollButton = document.getElementById("toTop");
         scrollButton.addEventListener("click", () => {
+            console.log("click");
         window.scrollTo({
             top:0,
             behavior:"smooth"
@@ -58,5 +52,14 @@
 }
 )
         };
+
+        window.addEventListener("load", (event) => {
+          navBar();
+            footer();
+            setupListeners();
+            setInterval(changeButtonText(),2000);  
+        })
+    
+
 
   
