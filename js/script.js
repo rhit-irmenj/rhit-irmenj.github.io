@@ -39,7 +39,7 @@
             .catch(error => console.log("Error: ", error))
         };
 
-    document.addEventListener("DOMContentLoaded", function(){
+
         navBar();
         footer();
         document.changeButtonText();
@@ -50,7 +50,7 @@
             top:0,
             behavior:"smooth"
 
-        })
+       
     });
     });
   
