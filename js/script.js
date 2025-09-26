@@ -4,6 +4,7 @@
     let button2 = document.getElementById("courseButton2");
     completedId = ["completed1","completed2","completed3","completed4","completed5"];
      notCompletedID = ["not_complete1","not_complete2","not_complete3","not_complete4","not_complete5"];
+
    function changeButtonText(){
 
         let text1= document.getElementById(completedId[i]).innerHTML;
@@ -39,18 +40,23 @@
             .catch(error => console.log("Error: ", error))
         };
 
+        window.addEventListener("load", (event) => {
+          navBar();
+            footer();
+            setupListeners();
+            setInterval(changeButtonText,2000);  
+        })
+    
 
-        navBar();
-        footer();
-        document.changeButtonText();
-        setInterval(changeButtonText,2000);
-         let scrollButton = document.getElementById("toTop");
+        function setupListeners(){
+                  let scrollButton = document.getElementById("toTop");
         scrollButton.addEventListener("click", () => {
         window.scrollTo({
             top:0,
             behavior:"smooth"
+    });
+}
+)
+        };
 
-       
-    });
-    });
   
