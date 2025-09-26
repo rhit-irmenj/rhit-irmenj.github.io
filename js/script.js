@@ -1,24 +1,4 @@
 
-   let i=0;
-    let button1 = document.getElementById("courseButton1");
-    let button2 = document.getElementById("courseButton2");
-    completedId = ["completed1","completed2","completed3","completed4","completed5"];
-     notCompletedID = ["not_complete1","not_complete2","not_complete3","not_complete4","not_complete5"];
-
-   function changeButtonText(){
-
-        let text1= document.getElementById(completedId[i]).innerHTML;
-        let text2 = document.getElementById(notCompletedID[i]).innerHTML;
-        i++;
-        button1.innerHTML = text1;
-        button2.innerHTML = text2;
-        if( i >= completedId.length ){
-            i = 0;
-        }
-
-    }
-    
-   
     function navBar(){
               
             fetch("nav.html")
@@ -99,20 +79,29 @@
                     behavior:"smooth"});
                 })
         }
-            // let scrollButton = document.getElementById("toTop");
-            // scrollButton.addEventListener("click", () => {
-            // console.log("click");
-            // window.scrollTo({
-            // top:0,
-            // behavior:"smooth"});
-            //         })
-                      
+
+    let index = 0;
+    notCompleteID = ["Computer Architecture 1 and 2","Intro to Web Programming","Programming Language Concepts","Intro to Database Systems","Operating Systems"]; 
+    completeId= ["Intro to Software Development","Object Oriented Software Development","Intro to Systems Programming","Intro to Systems","Data Structures and Algorithms"]; 
+    function changeButtonText(){
+        let button1 = document.getElementById("courseButton1");
+        let button2 = document.getElementById("courseButton2");
+        
+        index++;
+        button1.innerText = completeId[index];
+        button2.innerText = notCompleteID[index];
+        if(index == completeId.length-1){
+            index =0;
+        }
+
+
+    }              
 
         window.addEventListener("load", (event) => {
           navBar1();
             footer1();
             setupListeners();
-            //setInterval(changeButtonText(),2000);  
+            setInterval(changeButtonText,2000);  
         })
     
     
