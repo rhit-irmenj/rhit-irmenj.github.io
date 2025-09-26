@@ -168,10 +168,11 @@ li{
     column-width: 200px;
     column-count: 1;
 }
-#handshake, #linkedin {
+.linkWhite{
     color: white;
     margin-right: 25px;
 }
+
 li::marker{
     content:"★";
     font-size: 1.2em;
@@ -179,4 +180,5 @@ li::marker{
 .jobName{
     text-decoration: underline;
     background-color: #9e3135;
+    color:white
 }
