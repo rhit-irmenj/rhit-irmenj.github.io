@@ -2,7 +2,7 @@
    let i=0;
    function changeButtonText(){
         let button1 = document.getElementById("courseButton1");
-        let button2 = document.getElementById("courseButton2")
+        let button2 = document.getElementById("courseButton2");
         completedId = ["completed1","completed2","completed3","completed4","completed5"];
         notCompletedID = ["not_complete1","not_complete2","not_complete3","not_complete4","not_complete5"];
 
