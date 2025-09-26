@@ -42,7 +42,7 @@
     document.addEventListener("DOMContentLoaded", function(){
         navBar();
         footer();
-        changeButtonText();
+        document.changeButtonText();
         setInterval(changeButtonText,2000);
          let scrollButton = document.getElementById("toTop");
         scrollButton.addEventListener("click", () => {
